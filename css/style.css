@@ -1,0 +1,57 @@
+header h1{
+    margin-right: 50px;
+    display: inline-block;
+    color: cadetblue;
+    font-weight:700;
+    letter-spacing: 1px;
+    font-family: 'Cairo', sans-serif;
+    
+    
+}
+header img{
+    float: left;
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 20px;
+    text-decoration: none;
+    color: cornsilk;
+}
+nav{
+    background-color: darkgray;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5%;
+}
+nav a{
+color: cornsilk;
+text-decoration: none;
+font-size: x-large;
+}
+
+nav ul li :hover{
+     font-size: 30px;
+    }
+.main div{
+   display: inline-block;
+    width: 40%;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+  align-content:space-between;
+  justify-content: center;
+  flex-wrap: wrap;   
+}
+.main div img{
+    width: 50%;
+    height: 60%;
+}
+footer p{
+    text-align: center;
+}
+.material-icons {
+    color: gray;
+    font-size: 15px !important;
+  }
