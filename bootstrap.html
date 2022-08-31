@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
-<body>
+<body onload="navColor()">
     </nav>
     <header>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark fs-5 ">
@@ -28,11 +28,11 @@
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item ">
-                            <a class="nav-link" href="./meals.html">الوجبات</a>
+                            <a class="nav-link" href="./meals.html" onclick=" navColor(this)">الوجبات</a>
                         </li>
 
-                        <li class="nav-item"><a href="#" class="nav-link">السندويش</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">المقبلات</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" onclick=" navColor(this)">السندويش</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" onclick=" navColor(this)">المقبلات</a></li>
                         <li class="nav-item dropdown">
                            
                                 <span class=" dropdown-toggle nav-link" type="button"
@@ -89,7 +89,7 @@
                 </button>
             </div>
             <div class="h2 d-flex align-items-center justify-content-center">
-                <h1> delicious fast food</h1>
+                <h1 onmousemove="style.color='rgb(243, 188, 117)'" onmouseleave="style.color='cornsilk'"> delicious fast food</h1>
             </div>
         </div>
     </section>
@@ -97,15 +97,15 @@
     <div class="container py-5">
 
         <div class=" d-flex align-items-center  home-text py-5">
-            <img src="./img/meal-svgrepo-com.svg" width="150" height="120">
-            <div class="px-5">
+            <img id="im1" src="./img/meal-svgrepo-com.svg" width="150" height="120" onmouseover="changeColor(this)" onmouseout="resetColor()">
+            <div id="div1" class="px-5">
                 <h5>مع كل وجبة احصل على </h5>
                 <p> 1 صمون + 1 ميونيز + 1 كتشب + بطاطا</p>
             </div>
         </div>
         <div class="w-50 d-flex align-items-center  home-text py-5">
-            <img src="./img/logistics-delivery-express-svgrepo-com.svg" width="150" height="120">
-            <div class="px-5">
+            <img id="im2" src="./img/logistics-delivery-express-svgrepo-com.svg" width="150" height="120" onmouseover="changeColor(this)" onmouseout="resetColor()">
+            <div id="div2" class="px-5">
                 <h5>خدمة التوصيل مجانية </h5>
 
             </div>
@@ -129,6 +129,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+        <script src="./js/javascript.js"></script>
 </body>
 
 </html>
